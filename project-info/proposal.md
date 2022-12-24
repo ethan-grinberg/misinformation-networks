@@ -13,10 +13,7 @@ We will then use Dijkstra's algorithm to find the shortest __weighted__ (weights
 
 For this project, we will be using [The WICO Graph Dataset](https://datasets.simula.no/wico-graph/). In this dataset, nodes are users, and edges are follower connections between users. The dataset was collected from Twitter and contained 3000 subgraphs of Tweets manually classified as 5G-Corona Conspiracy, Other Conspiracy, and Non-Conspiracy. Each subgraph is associated with a specific source tweet and all of the retweeters of the source tweet. There is also user information, such as the number of friends and followers and the time difference from the source tweet. We will process the data to best support our project goals using __Python__ and __Pandas__ and store the dataset as a __CSV file__. We will drop missing data using these tools before importing it into our graph data structure. If there are uncorrectable errors in the dataset, we will also drop that specific piece of data. We will also add weights to the edges in Pandas for Dijkstra's algorithm.  
 
-To fully understand the dataset, we read the [paper](https://github-dev.cs.illinois.edu/cs225-fa21/cbrunner-ethanbg2-jasonoh3-aorals2/blob/main/data/dataset_info/Wico_Graph_Scroeder.pdf) and created a [notes summary](https://github-dev.cs.illinois.edu/cs225-fa21/cbrunner-ethanbg2-jasonoh3-aorals2/blob/main/data/dataset_info/data_set_notes.md).
-
-### Example Conspriacy Subgraph
-![](https://github-dev.cs.illinois.edu/cs225-fa21/cbrunner-ethanbg2-jasonoh3-aorals2/blob/main/data/wico-graph/Other_Graphs/20/plot.png)
+To fully understand the dataset, we read the [paper](../data/dataset_info/Wico_Graph_Scroeder.pdf) and created a [notes summary](../data/dataset_info/data_set_notes.md).
 
 ## Graph Algorithms
 
@@ -38,7 +35,7 @@ We will use __Dijkstra's Algorithm__ to determine the shortest path between two 
 
 |Week|Task|
 |----|----|
-|1|Read the dataset research paper available [here](https://cdn.discordapp.com/attachments/899749423456874509/906232004461355058/Wico_Graph_Scroeder.pdf) and work to understand the dataset. Process the dataset such that it is compatible with the project.|
+|1|Read the dataset research paper available [here](../data/dataset_info/Wico_Graph_Scroeder.pdf) and work to understand the dataset. Process the dataset such that it is compatible with the project.|
 |2|Create data structure to store the graph and implement functionality to load dataset from a CSV file. Implement the DFS traversal algorithm. Test the dataset parsing and traversal code.|
 |3|Implement the Strongly Connected Component algorithm and test.|
 |4|Implement the Dijkstra's algorithm and test.|
